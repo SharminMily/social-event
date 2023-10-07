@@ -9,7 +9,7 @@ const EventCard = ({ event }) => {
                     <h2 className="card-title text-2xl">{category}</h2>
                     
                         {
-                           description?.length > 120 ? <p>{description.slice(0,120)}...</p> : <p>{description}</p>
+                           description?.length > 120 ? <p className="pb-4">{description.slice(0,120)}...</p> : <p>{description}</p>
                         }
                     
                     {/* {

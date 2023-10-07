@@ -3,6 +3,7 @@ import Banner from "../../components/Banner/Banner";
 import Events from "../../components/Event/Events";
 import Header from "../../components/Header/Header";
 import OurServices from "../../components/OurServices/OurServices";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
     const events = useLoaderData()
@@ -17,6 +18,7 @@ const Home = () => {
                     <Events events={events}></Events>
                 </div>
             </div>
+            <Footer></Footer>
 
         </div>
     );

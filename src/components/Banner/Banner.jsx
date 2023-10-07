@@ -14,7 +14,7 @@ const Banner = () => {
                         <div className='top-60'>
                             <p className="text-white text-3xl">Farewell <span className='hover:font-semibold p-2'>Retirement</span> Party</p>
                             <div className="text-center">
-                                <button className='text-white font-bold hover:bg-blue-900 text-2xl  rounded-lg p-4 mt-4 border '>Event</button>
+                                <button className='text-white font-bold hover:bg-blue-900 text-2xl  rounded-lg p-4 mt-4 border '>Events</button>
                             </div>
                         </div>
                         <a href="#slide2" className="btn btn-circle">❯</a>
