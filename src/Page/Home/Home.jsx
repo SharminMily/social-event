@@ -4,6 +4,7 @@ import Events from "../../components/Event/Events";
 import Header from "../../components/Header/Header";
 import OurServices from "../../components/OurServices/OurServices";
 import Footer from "../../components/Footer/Footer";
+import ReviewClient from "../../components/reviewClient/reviewClient";
 
 const Home = () => {
     const events = useLoaderData()
@@ -16,6 +17,7 @@ const Home = () => {
                 <div>
                     <OurServices></OurServices>
                     <Events events={events}></Events>
+                    <ReviewClient></ReviewClient>                    
                 </div>
             </div>
             <Footer></Footer>
