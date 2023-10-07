@@ -1,0 +1,102 @@
+[
+    {
+     "id": 1,
+     "category": "Engagement",
+     "title": "Chris and Emily's Engagement Party",
+     "description": "Witness the beginning of a beautiful journey as Chris and Emily get engaged. It's an intimate gathering filled with love, laughter, and special moments.",
+     "image": "https://i.ibb.co/CVCyLpf/card10.png",
+     "date": "2023-07-05",
+     "viewers": 200,
+     "followers": 100,
+     "managementCompany": "Celebration Events"
+   },
+   {
+     "id": 2,
+     "category": "Weddings",
+     "title": "John and Sarah's Wedding",
+     "description": "A beautiful wedding celebration of John and Sarah. Join us for a day filled with love, joy, and laughter. Witness the union of two souls as they begin their journey together. Don't miss this unforgettable event!",
+     "image": "https://i.ibb.co/xS7pw42/card3.png",
+     "date": "2023-08-12",
+     "viewers": 500,
+     "followers": 250,
+     "managementCompany": "Dream Weddings Inc."
+   },
+  {
+     "id": 3,
+     "category": "Baby Shower",
+     "title": "Baby Shower for Sarah",
+     "description": "Get ready to shower Sarah and her upcoming bundle of joy with love and gifts. It's a joyous occasion that promises laughter and happiness.",
+     "image": "https://i.ibb.co/q0XmW0c/card8.png",
+     "date": "2023-04-22",
+     "viewers": 250,
+     "followers": 125,
+     "managementCompany": "Baby Blessings Events"
+   },
+   {
+     "id": 4,
+     "category": "Birthday",
+     "title": "Alice's 30th Birthday Bash",
+     "description": "Join us for an exciting evening as we celebrate Alice's 30th birthday. It's going to be a night of music, dance, and surprises. Get ready to party!",
+     "image": "https://i.ibb.co/DVS74nx/card2.png",
+     "date": "2023-05-28",
+     "viewers": 300,
+     "followers": 150,
+     "managementCompany": "Party Planners Co."
+   },
+   {
+     "id": 5,
+     "category": "Anniversaries",
+     "title": "25th Anniversary Celebration",
+     "description": "Celebrate 25 years of love and togetherness with us. Join in the festivities and cherish the moments that have brought us here. It's a silver jubilee celebration you won't want to miss!",
+     "image": "https://i.ibb.co/phL1zRb/anniversaries.png",
+     "date": "2023-09-10",
+     "viewers": 400,
+     "followers": 200,
+     "managementCompany": "Event Elegance Ltd."
+   }, 
+   {
+     "id": 6,
+     "category": "Retirement",
+     "title": "Farewell Retirement Party",
+     "description": "Join us in bidding farewell to a dedicated career. Let's celebrate the retiree's accomplishments and look forward to new adventures!",
+     "image": "https://i.ibb.co/TcQnKg6/card1.png",
+     "date": "2023-11-15",
+     "viewers": 150,
+     "followers": 75,
+     "managementCompany": "Retirement Celebrations Inc."
+   },
+     {
+     "id": 7,
+     "category": "Engagement",
+     "title": "Chris and Emily's Engagement Party",
+     "description": "Witness the beginning of a beautiful journey as Chris and Emily get engaged. It's an intimate gathering filled with love, laughter, and special moments.",
+     "image": "https://i.ibb.co/TbZ5qYd/card4.png",
+     "date": "2023-07-05",
+     "viewers": 200,
+     "followers": 100,
+     "managementCompany": "Celebration Events"
+   },
+  {
+     "id": 8,
+     "category": "Baby Shower",
+     "title": "Baby Shower for Sarah",
+     "description": "Get ready to shower Sarah and her upcoming bundle of joy with love and gifts. It's a joyous occasion that promises laughter and happiness.",
+     "image": "https://i.ibb.co/KX7Wk9N/card5.png",
+     "date": "2023-04-22",
+     "viewers": 250,
+     "followers": 125,
+     "managementCompany": "Baby Blessings Events"
+   },
+   
+    {
+     "id": 9,
+     "category": "Retirement",
+     "title": "Farewell Retirement Party",
+     "description": "Join us in bidding farewell to a dedicated career. Let's celebrate the retiree's accomplishments and look forward to new adventures!",
+     "image": "https://i.ibb.co/gMNyMJX/card6.png",
+     "date": "2023-11-15",
+     "viewers": 150,
+     "followers": 75,
+     "managementCompany": "Retirement Celebrations Inc."
+   }
+ ]

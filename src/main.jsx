@@ -8,19 +8,28 @@ import {
 import Root from './Root/Root.jsx';
 import Home from './Page/Home/Home.jsx';
 import Service from './Page/Servise/Service.jsx';
+import ErrorPage from './Page/ErrorPage/ErrorPage';
+import Events from './components/Event/Events';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch('./data.json')
       },
       {
         path: "/service",
         element: <Service></Service>,
+      },
+      {
+        path: "/events",
+        element: <Events></Events>, 
+        //  loader: () => fetch('./data.json')       
       },
     ],
   },

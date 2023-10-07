@@ -7,7 +7,7 @@ const OurServices = () => {
 
 
 
-            <div className="mt-12 lg:mx-16">
+            <div className="mt-12 lg:mx-6">
                 <div className="card lg:card-side bg-base-100 shadow-xl">
                     <figure><img src="https://media.istockphoto.com/id/1136557859/photo/girl-writer-creates-a-new-work-in-a-cafe-with-a-pencil-in-a-red-notebook.webp?b=1&s=170667a&w=0&k=20&c=vAPg32iwaihp53O6FAOjzX6UlMFLa3-B9egyK2qJdZs=" alt="Album" /></figure>
                     <div className="card-body">
