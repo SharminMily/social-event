@@ -45,8 +45,8 @@ const EventCard = ({ event }) => {
                             description?.length > 120 ? <p className="pb-4">{description.slice(0, 120)}...</p> : <p>{description}</p>
                         }
 
-                        <div className="card-actions justify-end">
-                           <Link to="/serviceDetails">
+                        <div className="card-actions ">
+                           <Link className="w-full" to="/serviceDetails">
                            <button onClick={handleService} className="btn btn-primary w-full bg-blue-900 text-white normal-case text-lg">Show Details</button>
                            </Link>
                         </div>

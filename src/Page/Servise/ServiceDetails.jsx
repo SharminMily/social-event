@@ -22,7 +22,7 @@ const ServiceDetails = () => {
         <div>
              <h2 className="text-center text-3xl my-10 text-blue-900">Our All Service Details here </h2>
             
-            <div className='grid md:grid-cols-2 grid-cols-1 gap-6 max-w-5xl mx-auto mt-10'>
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-6 max-w-5xl mx-auto my-16'>
            
                 {
                     event.map(event => <DetailsCard key={event.id} event={event}></DetailsCard>)

@@ -11,6 +11,8 @@ import Service from './Page/Servise/Service.jsx';
 import ErrorPage from './Page/ErrorPage/ErrorPage';
 import Events from './components/Event/Events';
 import ServiceDetails from './Page/Servise/ServiceDetails';
+import Login from './components/Authentication/Login';
+import Register from './components/Authentication/Register';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
         element: <Events></Events>, 
         //  loader: () => fetch('./data.json')       
       },
+      {
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/register",
+        element: <Register></Register>
+      }
     ],
   },
 ]);
