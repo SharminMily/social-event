@@ -1,9 +1,11 @@
-import EventCard from "../../components/Event/EventCard";
+// import { useEffect, useState } from "react";
 
-const Service = () => {
-    return (
-        <div>            
-           <EventCard></EventCard>  
+
+const Service = ({event}) => {
+    console.log(event)
+      return (
+        <div>           
+        
         </div>
     );
 };

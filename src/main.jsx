@@ -10,6 +10,7 @@ import Home from './Page/Home/Home.jsx';
 import Service from './Page/Servise/Service.jsx';
 import ErrorPage from './Page/ErrorPage/ErrorPage';
 import Events from './components/Event/Events';
+import ServiceDetails from './Page/Servise/ServiceDetails';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <Service></Service>,
+      },
+      {
+        path: "/serviceDetails",
+        element: <ServiceDetails></ServiceDetails>,
       },
       {
         path: "/events",

@@ -1,13 +1,14 @@
 /* eslint-disable react/no-unknown-property */
+// import { FaBeer } from 'react-icons/fa';
 const ReviewClient = () => {
     return (
-        <div className='my-20'>
-            <div className="flex gap-8 justify-evenly">
+        <div className='my-20 mx-20'>
+            <div className="md:flex flex-row  justify-center gap-8 md:justify-evenly">
                 <div className="indicator">
                     <span className="indicator-item indicator-bottom indicator-center badge badge-primary"></span>
                     <div className="grid bg-base-200 place-items-center rounded-xl shadow-xl">
                         <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border  shadow-none">
-                            <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-black shadow-none">
+                            <div className="relative px-4 mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-2 pb-8 text-black shadow-none">
                                 <img
                                     src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
                                     alt="tania andrew"
@@ -91,22 +92,20 @@ const ReviewClient = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="mb-6 p-0">
+                            <div className="mb-6 px-6">
                                 <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                                   I found solution to all my design needs from Creative Tim. I use them
-                                    as a freelancer in my hobby projects for fun! And its really affordable,
-                                    very humble guys !!!
+                                I had the privilege of attending John and Sarahs wedding, and it was an absolute fairytale! The venue was stunning, and every detail was perfect. The couple radiated love, and the atmosphere was filled with joy. It was a day to remember, and Im grateful to have been a part of it.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* 2 */}
-                <div className="indicator">
+                <div className="indicator md:pt-0 pt-10">
                     <span className="indicator-item indicator-bottom indicator-center badge badge-primary"></span>
                     <div className="grid bg-base-200 place-items-center rounded-xl shadow-xl">
                         <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border  shadow-none">
-                            <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-black shadow-none">
+                            <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-2 px-4 pb-8 text-black shadow-none">
                                 <img
                                     src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
                                     alt="tania andrew"
@@ -190,11 +189,9 @@ const ReviewClient = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="mb-6 p-0">
-                                <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                                    I found solution to all my design needs from Creative Tim. I use them
-                                    as a freelancer in my hobby projects for fun! And its really affordable,
-                                    very humble guys !!!
+                            <div className="mb-6 px-6">
+                                <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">              
+                                The 25th-anniversary celebration was heartwarming. Event Elegance Ltd. did an exceptional job organizing the event. The couples love story is an inspiration, and it was beautifully captured in the ambiance. Heres to many more years of love and togetherness!
                                 </p>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+
 import EventCard from "./EventCard";
 
 const Events = ({events}) => {
@@ -12,6 +13,7 @@ const Events = ({events}) => {
             {
                 events.map(event => <EventCard key={event.id} event={event}></EventCard>)
             }
+           
            </div>
         </div>
     );
