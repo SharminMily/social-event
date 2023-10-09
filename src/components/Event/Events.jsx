@@ -11,10 +11,11 @@ const Events = ({events}) => {
            <h1 className="text-center text-4xl font-bold">All Social Events</h1>
            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-10">
             {
-                events.map(event => <EventCard key={event.id} event={event}></EventCard>)
+                events.map(event => <EventCard key={event.id} event={event}></EventCard>)                
             }
            
            </div>
+         
         </div>
     );
 };

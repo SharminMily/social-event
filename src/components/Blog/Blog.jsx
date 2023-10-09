@@ -1,7 +1,7 @@
 const Blog = () => {
 
     return (
-        <div>
+        <div className="md:mx-32  mx-12">
             <div className="pt-4">
                 <h1 className="text-3xl text-center my-12 font-bold">TITLE : <span className="text-3xl text-blue-900">
                     Celebrating Lifes Beautiful Moments: The Magic of Social Events</span></h1>

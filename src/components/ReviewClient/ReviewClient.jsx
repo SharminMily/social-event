@@ -2,7 +2,7 @@
 // import { FaBeer } from 'react-icons/fa';
 const ReviewClient = () => {
     return (
-        <div className='my-20 mx-20'>
+        <div className='my-20 md:mx-20'>
             <div className="md:flex flex-row  justify-center gap-8 md:justify-evenly">
                 <div className="indicator">
                     <span className="indicator-item indicator-bottom indicator-center badge badge-primary"></span>
@@ -114,7 +114,7 @@ const ReviewClient = () => {
                                 <div className="flex w-full flex-col gap-0.5">
                                     <div className="flex items-center justify-between">
                                         <h5 className="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                                            Tania Andrew
+                                            alvi jeson
                                         </h5>
                                         <div className="5 flex items-center gap-0">
                                             <svg
@@ -185,7 +185,7 @@ const ReviewClient = () => {
                                         </div>
                                     </div>
                                     <p className="block font-sans text-base font-light leading-relaxed text-blue-900 antialiased">
-                                        Frontend Lead @ Google
+                                        L.T.D lead @jeson
                                     </p>
                                 </div>
                             </div>
