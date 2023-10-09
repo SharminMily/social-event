@@ -14,7 +14,6 @@ These features are common in many modern websites and contribute to a richer and
 
  
 
-- [Live link](https://react-social-events-92624.web.app/)
-
+-  ### live link [https://react-social-events-92624.web.app/]
 
 .
