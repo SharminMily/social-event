@@ -48,7 +48,8 @@ const Login = () => {
             <div className="hero min-h-screen bg-base-200 ">
                 <div className="hero-content flex flex-col ">
                     <h1 className="text-3xl p-4 font-bold text-blue-900">Please Login Here...</h1>
-                    <div className="card px-10 w-full max-w-sm shadow-2xl bg-base-100 ">
+
+                    <div className="card px-10 w-full max-w-sm shadow-2xl bg-base-100 "  data-aos="zoom-in">
                         <div className="pb-8">
 
                             <form onSubmit={handleSubmit} className="card-body">

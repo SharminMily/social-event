@@ -4,7 +4,8 @@ const ReviewClient = () => {
     return (
         <div className='my-20 md:mx-20'>
             <div className="md:flex flex-row  justify-center gap-8 md:justify-evenly">
-                <div className="indicator">
+
+                <div className="indicator" data-aos="zoom-in">
                     <span className="indicator-item indicator-bottom indicator-center badge badge-primary"></span>
                     <div className="grid bg-base-200 place-items-center rounded-xl shadow-xl">
                         <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border  shadow-none">
@@ -101,7 +102,7 @@ const ReviewClient = () => {
                     </div>
                 </div>
                 {/* 2 */}
-                <div className="indicator md:pt-0 pt-10">
+                <div className="indicator md:pt-0 pt-10" data-aos="zoom-in">
                     <span className="indicator-item indicator-bottom indicator-center badge badge-primary"></span>
                     <div className="grid bg-base-200 place-items-center rounded-xl shadow-xl">
                         <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border  shadow-none">
