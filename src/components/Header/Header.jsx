@@ -6,7 +6,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Header = () => {
-    const { user, logOut } = useContext(AuthContext)
+    const { user, logOut} = useContext(AuthContext)
     const navLinks = (
         <>
             <li><NavLink to="/">Home</NavLink></li>

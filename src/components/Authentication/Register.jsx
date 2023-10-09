@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
@@ -8,8 +8,8 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 const Register = () => {
 
-    const { createUser } = useContext(AuthContext)
-
+    const { createUser, handleUpdateProfile } = useContext(AuthContext);
+    const navigate = useNavigate();
 
 
     const [showPassword, setPassword] = useState(false)
@@ -29,47 +29,36 @@ const Register = () => {
             toast.error("Please must be at least 6 characters")
             return;
         }
-        // else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(password)) {
+        else if (!/^(?=.*[A-Z])(?=.*[@#$%^&+=!]).*$/.test(password)) {
 
-        //     toast.error("Please must be a capital letter and special character")
-        //     return;
-        // }  
+            toast.error("Please must be a capital letter and special character")
+            return;
+        }  
 
         // create a new user
         createUser(email, password)
             .then(res => {
-                console.log(res.user)
+                toast.success('user login successfully')
+                navigate('/')
+                // console.log(res.user)
             })
             .catch(error => {
-                console.log(error)
+                toast.error(error.message)
+                // console.log(error)
             })
-
-
-
-
-        //  signIn(email, password)
-
-        // .then(res => {
-        //     // toast.success('user login successfully')
-        //     // navigate('/')
-        //     console.log(res.user)
-        // })
-
-        // .catch(error => {
-        //     toast.error(error.message)
-        // })
-        // signIn(email, password)
-        //     .then(res => {
-        //         // handleUpdateProfile(name, img)
-        //         //     .then(() => {
-        //         //         toast.success('user create successfully')
-        //         //         navigate('/')
-        //         //     })
-        //         console.log(res.user)
-        //     })
-        //     .catch(error => {
-        //         toast.error(error.message)
-        //     })
+     
+        createUser(email, password)
+            .then(res => {
+                handleUpdateProfile(name, img)
+                    .then(() => {
+                        toast.success('user create successfully')
+                        navigate('/')
+                    })
+                // console.log(res.user)
+            })
+            .catch(error => {
+                toast.error(error.message)
+            })
     }
 
 

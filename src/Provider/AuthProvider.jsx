@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebaseConfig";
 
@@ -24,6 +24,13 @@ const AuthProvider = ({children}) => {
     setLoading(true)
     return createUserWithEmailAndPassword(auth, email, password)
    } 
+     
+       // UpdateProfile
+    const handleUpdateProfile = (name, photo) => {
+        return updateProfile(auth.setUser, {
+            displayName : name, photoURL: photo
+        })
+    }
 
   //    sing in user
 
@@ -40,10 +47,13 @@ const AuthProvider = ({children}) => {
 
     //   using observer current user
     useEffect(() => {
-       onAuthStateChanged(auth, (user) => {
+    const unSubscribe =  onAuthStateChanged(auth, (user) => {
           setUser(user)
           setLoading(false)
      })
+     return () => {
+        unSubscribe()
+     }
     },[])
  
 //   console.log(user)
@@ -58,6 +68,7 @@ const AuthProvider = ({children}) => {
         logOut,
         user,
         loading,
+        handleUpdateProfile,
     }
 
 

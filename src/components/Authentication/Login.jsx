@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useContext, useState } from "react";
@@ -12,6 +12,7 @@ const Login = () => {
     const { signIn } = useContext(AuthContext)
 
     const [showPassword, setPassword] = useState(false)
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -24,6 +25,9 @@ const Login = () => {
         // create a new user
         signIn(email, password)
         .then(res => {
+            toast.success('user login successfully')
+            navigate('/serviceDetails')
+            console.log(res.user)
             console.log(res.user)
         })
         .catch(error => {
