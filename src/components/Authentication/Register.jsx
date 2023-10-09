@@ -49,11 +49,12 @@ const Register = () => {
         createUser(email, password)
             .then(res => {
                 handleUpdateProfile(name, img)
+                console.log(name, img)
                     .then(() => {
                         toast.success('user create successfully')
                         navigate('/')
                     })
-                // console.log(res.user)
+                console.log(res.user)
             })
             .catch(error => {
                 toast.error(error.message)

@@ -7,6 +7,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 const Header = () => {
     const { user, logOut} = useContext(AuthContext)
+    console.log(user)
     const navLinks = (
         <>
             <li><NavLink to="/">Home</NavLink></li>
@@ -47,7 +48,7 @@ const Header = () => {
                             </label>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                                 <li>
-                                    <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
+                                    <button className="btn btn-sm  btn-ghost">{user?.displayName || user?.email}</button>
 
                                 </li>
                                 <li>
@@ -58,7 +59,7 @@ const Header = () => {
                             </ul>
                         </div>
                             :
-                            <Link to="/register"><a className="btn">Register</a></Link>
+                            <Link to="/register"><a className="btn">register</a></Link>
                     }
                 </div>
             </div>

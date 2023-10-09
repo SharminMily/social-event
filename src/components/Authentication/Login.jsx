@@ -28,22 +28,12 @@ const Login = () => {
             toast.success('user login successfully')
             navigate('/serviceDetails')
             console.log(res.user)
-            console.log(res.user)
+           
         })
         .catch(error => {
-            console.log(error)
-        })
-
-
-        //     .then(res => {
-        //         // toast.success('user login successfully')
-        //         // navigate('/')
-        //         console.log(res.user)
-        //     })
-
-        //     .catch(error => {
-        //         toast.error(error.message)
-        //     })
+            toast.error(error.message)
+           
+        })      
 
     }
 
