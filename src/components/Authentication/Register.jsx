@@ -11,7 +11,6 @@ const Register = () => {
     const { createUser, handleUpdateProfile } = useContext(AuthContext);
     const navigate = useNavigate();
 
-
     const [showPassword, setPassword] = useState(false)
 
     const handleSubmit = (e) => {
@@ -60,7 +59,6 @@ const Register = () => {
                 toast.error(error.message)
             })
     }
-
 
     return (
         <div>
