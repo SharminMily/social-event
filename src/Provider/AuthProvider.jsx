@@ -27,15 +27,16 @@ const AuthProvider = ({children}) => {
      
        // UpdateProfile
     const handleUpdateProfile = (name, photo) => {
-        return updateProfile(auth.setUser, {
+        return updateProfile(auth.currentUser, {
             displayName : name, photoURL: photo
         })
     }
 
   //    sing in user
 
-  const signIn = (email, password) => {
+  const signIn = (email, password) => {  
     return signInWithEmailAndPassword(auth, email, password)
+    
   }
 
    
