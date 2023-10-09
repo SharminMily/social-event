@@ -1,8 +1,8 @@
 // import { useEffect, useState } from "react";
 
 
-const Service = ({event}) => {
-    console.log(event)
+const Service = () => {
+    // console.log(event)
       return (
         <div>           
         
